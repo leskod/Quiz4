@@ -19,6 +19,9 @@
 		017E4E1618A2DB0B005EB31D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017E4DFE18A2DB0B005EB31D /* UIKit.framework */; };
 		017E4E1E18A2DB0B005EB31D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 017E4E1C18A2DB0B005EB31D /* InfoPlist.strings */; };
 		017E4E2018A2DB0B005EB31D /* Quiz4Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 017E4E1F18A2DB0B005EB31D /* Quiz4Tests.m */; };
+		017E4E2B18A2DE1A005EB31D /* Q4View.m in Sources */ = {isa = PBXBuildFile; fileRef = 017E4E2A18A2DE1A005EB31D /* Q4View.m */; };
+		017E4E2E18A2DE6C005EB31D /* Q4LeftController.m in Sources */ = {isa = PBXBuildFile; fileRef = 017E4E2D18A2DE6C005EB31D /* Q4LeftController.m */; };
+		017E4E3118A2DE9E005EB31D /* Q4RightController.m in Sources */ = {isa = PBXBuildFile; fileRef = 017E4E3018A2DE9E005EB31D /* Q4RightController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,12 @@
 		017E4E1B18A2DB0B005EB31D /* Quiz4Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Quiz4Tests-Info.plist"; sourceTree = "<group>"; };
 		017E4E1D18A2DB0B005EB31D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		017E4E1F18A2DB0B005EB31D /* Quiz4Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quiz4Tests.m; sourceTree = "<group>"; };
+		017E4E2918A2DE1A005EB31D /* Q4View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Q4View.h; sourceTree = "<group>"; };
+		017E4E2A18A2DE1A005EB31D /* Q4View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Q4View.m; sourceTree = "<group>"; };
+		017E4E2C18A2DE6C005EB31D /* Q4LeftController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Q4LeftController.h; sourceTree = "<group>"; };
+		017E4E2D18A2DE6C005EB31D /* Q4LeftController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Q4LeftController.m; sourceTree = "<group>"; };
+		017E4E2F18A2DE9E005EB31D /* Q4RightController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Q4RightController.h; sourceTree = "<group>"; };
+		017E4E3018A2DE9E005EB31D /* Q4RightController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Q4RightController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,9 +116,15 @@
 		017E4E0018A2DB0B005EB31D /* Quiz4 */ = {
 			isa = PBXGroup;
 			children = (
+				017E4E0C18A2DB0B005EB31D /* Images.xcassets */,
+				017E4E2C18A2DE6C005EB31D /* Q4LeftController.h */,
+				017E4E2D18A2DE6C005EB31D /* Q4LeftController.m */,
+				017E4E2F18A2DE9E005EB31D /* Q4RightController.h */,
+				017E4E3018A2DE9E005EB31D /* Q4RightController.m */,
+				017E4E2918A2DE1A005EB31D /* Q4View.h */,
+				017E4E2A18A2DE1A005EB31D /* Q4View.m */,
 				017E4E0918A2DB0B005EB31D /* Quiz4AppDelegate.h */,
 				017E4E0A18A2DB0B005EB31D /* Quiz4AppDelegate.m */,
-				017E4E0C18A2DB0B005EB31D /* Images.xcassets */,
 				017E4E0118A2DB0B005EB31D /* Supporting Files */,
 			);
 			path = Quiz4;
@@ -241,7 +256,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				017E4E0B18A2DB0B005EB31D /* Quiz4AppDelegate.m in Sources */,
+				017E4E2E18A2DE6C005EB31D /* Q4LeftController.m in Sources */,
+				017E4E3118A2DE9E005EB31D /* Q4RightController.m in Sources */,
 				017E4E0718A2DB0B005EB31D /* main.m in Sources */,
+				017E4E2B18A2DE1A005EB31D /* Q4View.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
