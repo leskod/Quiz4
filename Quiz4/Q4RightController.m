@@ -10,45 +10,26 @@
 
 @implementation Q4RightController
 
--(id)init
-{
-    self = [super initWithNibName:@"RIGHT" bundle:nil];
-    
-    self.view.backgroundColor = [UIColor redColor];
-    
-    return self;
-}
-
-
-
 -(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    //self=[super init];
+    self = [super initWithNibName:nil
+                           bundle:nil];
     if (self)
     {
-//        self.title = @"RIGHT";
-//        self.navigationItem.title = @"RIGHT";
-        self.view.backgroundColor = [UIColor redColor];
+        //get the tab bar item
+        UITabBarItem *tbi = [self tabBarItem];
         
-        
-        
-        
-        
-        
+        //give it a label
+        [tbi setTitle:@"RIGHT"];
+        [[self view] setBackgroundColor:[UIColor redColor]];
     }
-    
     return self;
 }
 
 
 -(void)viewDidAppear:(BOOL)animated
 {
-    
-    
-    CGRect rectRight=CGRectMake(220, 110, 100, 100);
-    
-    
-    
+    self.view.frame = CGRectMake(220, 110, 100, 100);
 }
 
 

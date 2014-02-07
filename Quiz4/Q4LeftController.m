@@ -10,42 +10,28 @@
 
 @implementation Q4LeftController
 
--(id)init
-{
-    self = [super initWithNibName:@"LEFT" bundle:nil];
-    
-    self.view.backgroundColor = [UIColor greenColor];
-    
-    return self;
-}
-
-
 -(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    //self=[super init];
+    self = [super initWithNibName:nil
+                           bundle:nil];
     if (self)
     {
-//        self.title = @"LEFT";
-//        self.navigationItem.title = @"LEFT";
-        self.view.backgroundColor = [UIColor greenColor];
+        //get the tab bar item
+        UITabBarItem *tbi = [self tabBarItem];
         
-        
-        
-        
-        
-    
+        //give it a label
+        [tbi setTitle:@"LEFT"];
+        [[self view] setBackgroundColor:[UIColor greenColor]];
     }
-    
     return self;
 }
 
 -(void)viewDidAppear:(BOOL)animated
 {
+    CGRect rectLeft =CGRectMake(0, 110, 100, 100);
+    self.view.frame = rectLeft;
     
-    
-    CGRect rectLeft=CGRectMake(0, 110, 100, 100);
-    
-    
+    //self.view.frame = CGRectMake(0, 110, 100, 100);
 }
 
 
