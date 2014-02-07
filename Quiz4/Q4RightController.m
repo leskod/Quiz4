@@ -23,6 +23,7 @@
         [tbi setTitle:@"RIGHT"];
         [[self view] setBackgroundColor:[UIColor redColor]];
     }
+    
     return self;
 }
 

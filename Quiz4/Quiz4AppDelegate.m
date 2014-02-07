@@ -26,11 +26,10 @@
     
     
     
-    
-    
     UITabBarController *myTabBarController = [[UITabBarController alloc] init];
     
     NSArray *viewControllers = [NSArray arrayWithObjects:myLeftController, myRightController, nil];
+    
     [myTabBarController setViewControllers:viewControllers];
     
     [[self window] setRootViewController:myTabBarController];
